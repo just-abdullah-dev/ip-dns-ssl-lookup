@@ -25,17 +25,17 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Project Information</h3>
-            <p>This is a project for Computer Networking at <Link href="https://www.paf-iast.edu.pk/" className="text-primary hover:underline">PAF-IAST</Link>.</p>
+            <p>This is a project for Computer Networking at <Link href="https://www.paf-iast.edu.pk/" className=" hover:underline hover:text-white">PAF-IAST</Link>.</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <Link href="https://github.com" className="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-900">
+            <Link href="https://github.com/just-abdullah-dev/ip-dns-ssl-lookup" className="inline-flex items-center space-x-2 hover:text-white ">
               <Github className="h-5 w-5" />
-              <span>GitHub</span>
+              <span>GitHub Repository</span>
             </Link>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t text-center text-sm text-gray-500">
+        <div className="mt-8 pt-8 border-t text-center text-sm text-gray-300">
           © {new Date().getFullYear()} IP-DNS-SSL-Lookup. All rights reserved.
         </div>
       </div>
