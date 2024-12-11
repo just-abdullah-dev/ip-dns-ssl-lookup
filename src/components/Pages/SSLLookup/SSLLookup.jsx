@@ -35,14 +35,16 @@ export default function SSLLookup() {
     setCertInfo(null);
 
     try {
-      const response = await fetch(`https://crt.sh/?q=${domain}&output=json`);
+      const response = await fetch(`/api/ssl-lookup?domain=${domain}`);
       if (!response.ok) {
         throw new Error("Failed to fetch certificate information");
       }
 
       const data = await response.json();
-      if (data.length > 0) {
-        setCertInfo(data[0]);
+      console.log(data);
+      
+      if (data?.data.length > 0) {
+        setCertInfo(data?.data[0]);
       } else {
         setError("No certificate information found for this domain");
       }
